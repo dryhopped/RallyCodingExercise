@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rally Coding Exercise 1</title>
+
+        <link rel="stylesheet" type="text/css" href="/src/style.css">
+    </head>
+    <body>
+        <section id="application">
+            <h1>Number Converter</h1>
+            <div class="input-wrapper"><input class="text" id="number" name="number" type="text" placeholder="Enter a number"></div>
+            <span id="string-number"></span>
+        </section>
+        <script src="/src/application.js"></script>
+        <script>
+            var converter = new Converter.bind(
+                document.querySelector('#number'),
+                document.querySelector('#string-number')
+            )
+        </script>
+    </body>
+</html>
