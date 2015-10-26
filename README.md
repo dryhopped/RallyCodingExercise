@@ -1,5 +1,7 @@
 # Rally Coding Exercise 1
 
+[![Build Status](https://travis-ci.org/dryhopped/RallyCodingExercise.png?branch=master)](https://travis-ci.org/dryhopped/RallyCodingExercise)
+
 Write some code that will accept an amount and convert it to the appropriate
 string representation.
                     
