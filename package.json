@@ -5,6 +5,10 @@
     "license": "MIT",
     "version": "0.0.1",
     "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dryhopped/RallyCodingExercise"
+    },
     "scripts": {
         "start": "node server.js",
         "test": "mocha --recursive",

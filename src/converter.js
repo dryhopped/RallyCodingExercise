@@ -22,8 +22,8 @@ var Converter = (function() {
     /**
      * Validates the input.
      * 
-     * @param  {mixed} number The input to validate
-     * @return {mixed}
+     * @param  {Number|String}  number The input to validate
+     * @return {String|Boolean}
      */
     var validate = function(number) {
 
@@ -34,6 +34,12 @@ var Converter = (function() {
 
     }
 
+    /**
+     * Validates that the number is within this applications convertable range.
+     * 
+     * @param  {Number|String}  number The number being converted.
+     * @return {String|Boolean}
+     */
     var validateSize = function(number) {
 
         var absInput = Math.abs(number),
@@ -47,6 +53,12 @@ var Converter = (function() {
 
     }
 
+    /**
+     * Converts the number to its string representation.
+     * 
+     * @param  {Number|String} number The number to be converted
+     * @return {String}
+     */
     var numberToWords = function(number) {
 
         if (number == '')
@@ -100,7 +112,7 @@ var Converter = (function() {
                 }
 
                 output += groups[sections] + ' '
-                
+
             }
 
             sections--
@@ -121,14 +133,6 @@ var Converter = (function() {
         }
 
         return output.charAt(0).toUpperCase() + output.slice(1)
-
-    }
-
-    var stringRepresentation = function(number) {
-
-        var output = numberToWords(number)
-
-        return output
 
     }
 
@@ -158,8 +162,8 @@ var Converter = (function() {
     /**
      * Converts a number to its string representation.
      *
-     * @param  {Number} number The number to convert.
-     * @return {String}        The converted number.
+     * @param  {Number|String} number The number to convert.
+     * @return {String}
      */
     var convert = function(number) {
 
@@ -167,14 +171,14 @@ var Converter = (function() {
         if (error = validate(number))
             return error
 
-        return stringRepresentation(number)
+        return numberToWords(number)
 
     }
 
     /**
      * The Converter Object.
      *
-     * @return {void}
+     * @return {Object}
      */
     return {
 
