@@ -8,9 +8,10 @@ Convert 2523.04 to "Two thousand five hundred twenty-three and 04/100 dollars"
 
 ## Setup
 
-To run the application, you will need to have nodejs installed. This will allow
-you to run the application as well as the unit tests. The application code is
-designed to allow usage from either the command line or within the web browser.
+To run the application, you will need to have nodejs (v0.10.0 or greater)
+installed. This will allow you to run the application as well as the unit tests.
+The application code is designed to allow usage from either the command line or
+within the web browser.
 
 To setup run the following in the command line from the project's root directory:
 
